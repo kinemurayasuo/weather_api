@@ -1,0 +1,23 @@
+server:
+    port: 8080
+
+
+# MySQL ??
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/weather_database
+        username: root
+        password:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+# JPA Hibernate ??
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: update
+# API ??
+weather:
+    api:
+        url: http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst
+        key: fSsfUAxiS4e6yY6SVpigTNjiWcSKsC9iO1BPjGAMuXvOkAos8ioWlylPmeuXE%2F5BW3Du3zi7LczTEV3mjodn4A%3D%3D
